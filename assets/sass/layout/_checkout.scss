@@ -1,0 +1,82 @@
+.checkout{
+    .billing-checkbox{
+        input {
+            padding: 0;
+            display: none;
+            cursor: pointer;
+            &:checked + label{
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 4px;
+                    left: 6px;
+                    width: 6px;
+                    height: 15px;
+                    z-index: 10;
+                    border: solid $white;
+                    border-width: 0 2px 2px 0;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+        label {
+            position: relative;
+            cursor: pointer;
+            font-family: $font-sec-2;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: 0.32px;
+            @media(max-width: 992px) {
+                font-size: 20px;
+            }
+            @media(max-width: 767px) {
+                font-size: 18px;
+            }
+            @media(max-width: 575px) {
+                font-size: 16px;
+            }    
+            &:before {
+                content: "";
+                -webkit-appearance: none;
+                background: transparent;
+                border: 1px solid $white;
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                position: relative;
+                vertical-align: middle;
+                cursor: pointer;
+                margin-right: 8px;
+                margin-top: -3px;
+            }
+        }
+    }
+    .billing-address-form{
+        margin-top: 32px;
+    }
+    .payment-option{
+        background: $light-black;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        gap: 8px;
+        .icon{
+            height: 48px;
+            width: 48px;
+            border-radius: 48px;
+            background: $black;
+            justify-content: center;
+            display: grid;
+            align-items: center;
+        }
+        &.active{
+            background: $accent-1;
+            .icon{
+                background: $dark-black;
+            }  
+        }
+    }
+}

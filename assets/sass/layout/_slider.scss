@@ -1,0 +1,182 @@
+.slick-prev,
+.slick-next {
+  &:after {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    z-index: 10;
+    top: -95px !important;
+    color: $accent-1;
+    background: $black;
+    border-radius: 0px;
+    font-size: 32px;
+    line-height: 32px;
+    padding: 4px;
+    font-family: $font-awesome;
+
+  }
+}
+
+.slick-prev {
+  &::after {
+    content: '\f053';
+    right: 72px !important;
+  }
+}
+
+.slick-next {
+  &::after {
+    content: "\f054";
+    right: 16px !important;
+  }
+}
+
+.match-stream-slider {
+  margin: 0 -15px;
+
+  .slick-prev {
+    transition: $transition;
+
+    &:hover {
+      &::after {
+        background: $white;
+        transition: $transition;
+      }
+    }
+  }
+
+  .slick-next {
+    transition: $transition;
+
+    &:hover {
+      &::after {
+        background: $white;
+        transition: $transition;
+      }
+    }
+  }
+
+  .stream-card {
+    margin: 0 15px;
+  }
+}
+
+.product-slider {
+  margin: 0 -15px;
+
+  .slick-prev {
+    transition: $transition;
+
+    &:hover {
+      &::after {
+        background: $white;
+        transition: $transition;
+      }
+    }
+  }
+
+  .slick-next {
+    transition: $transition;
+
+    &:hover {
+      &::after {
+        background: $white;
+        transition: $transition;
+      }
+    }
+  }
+
+  .product-card {
+    margin: 0 15px;
+  }
+}
+
+.image-slider {
+  margin: 0 -8px;
+
+  .slick-prev {
+    transition: $transition;
+
+    &:hover {
+      &::after {
+        background: $white;
+        transition: $transition;
+      }
+    }
+  }
+
+  .slick-next {
+    transition: $transition;
+
+    &:hover {
+      &::after {
+        background: $white;
+        transition: $transition;
+      }
+    }
+  }
+
+  .img-block {
+    margin: 0 8px;
+  }
+}
+
+.brands-slider {
+  .img-block {
+    img {
+      margin: 0 auto;
+    }
+  }
+}
+
+.best-seller-slider {
+  margin: 0 -15px;
+
+  .game-product-card {
+    margin: 0 15px;
+  }
+}
+
+.game-stream-slider {
+  margin: 0 -15px;
+
+  .slick-prev {
+    transition: $transition;
+
+    &:hover {
+      &::after {
+        background: $white;
+        transition: $transition;
+      }
+    }
+  }
+
+  .slick-next {
+    transition: $transition;
+
+    &:hover {
+      &::after {
+        background: $white;
+        transition: $transition;
+      }
+    }
+  }
+
+  .game-card {
+    margin: 0 15px;
+  }
+}
+
+.testimonial-slider {
+  .testimonial-card {
+    margin: 0 15px;
+  }
+}
+
+.preview-slider-nav {
+  margin: 0 -15px;
+
+  .detail-img-block {
+    margin: 0 15px;
+  }
+}

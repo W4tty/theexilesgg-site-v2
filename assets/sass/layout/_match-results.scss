@@ -1,0 +1,162 @@
+.match-results{
+    .nav-tabs{
+        display: flex;
+        gap: 32px;
+        border: none;
+        width: fit-content;
+        margin-left: auto;
+        @include media-query(992px) {
+            margin: 0 auto;
+        }
+        .nav-item{
+            .nav-link{
+                border: 1px solid $white;
+                border-radius: 0;
+                background-color: transparent;
+                color: $white;
+                transition: $transition;
+                font-family: $font-sec-2;
+                font-weight: 600;
+                font-size: 21px;
+                line-height: 130%;
+                padding: 8px 24px;
+                @include media-query(992px) {
+                    font-size: 19px;
+                } 
+                @include media-query(492px) {
+                    font-size: 16px;
+                    padding: 8px 12px;
+                } 
+                &.active{
+                    background-color: $accent-1;
+                    border: 1px solid $accent-1;
+                }
+                &:hover{
+                    background-color: $accent-1;
+                    border: 1px solid $accent-1;
+                }
+            }
+        }
+    }
+    .results-table{
+        width: 100%;
+        thead{
+            tr{
+                border-top: 2px solid $light-black;
+            }
+        }
+        tbody{
+            tr{
+                &:nth-child(odd){
+                    background: $black;
+                    border-bottom: 2px solid $light-black;
+                    border-top: 2px solid $light-black;
+                }
+            }
+        }
+        tr{
+            th{
+                text-align: center;
+                padding: 32px 0;
+                font-family: $font-sec;
+                font-weight: 700;
+                font-size: 27px;
+                line-height: 120%;
+                letter-spacing: -0.27px;
+                @media(max-width: 1399px) {
+                    font-size: 22px;
+                }
+                @media(max-width: 1199px) {
+                    font-size: 20px;
+                }
+                @media(max-width: 992px) {
+                    font-size: 16px;
+                } 
+                
+                @media(max-width: 767px) {
+                    font-size: 24px;
+                }
+                @media(max-width: 575px) {
+                    font-size: 22px;
+                    letter-spacing:  0.27px;
+                } 
+                &:first-child{
+                    text-align: left;
+                    padding-left: 24px;
+                }
+                &:nth-child(2){
+                    text-align: left;
+                }
+                &:last-child{
+                    text-align: right;
+                    padding-right: 24px;
+                }
+                
+            }
+            td{
+                text-align: center;
+                padding: 16px 0px;
+                &:first-child{
+                    text-align: left;
+                    padding-left: 24px;
+                }
+                &:nth-child(2){
+                    text-align: left;
+                }
+                &:last-child{
+                    text-align: right;
+                    padding-right: 24px;
+                }
+                &.team{
+                    display: flex;
+                    align-items: center;
+                    gap: 24px;
+                    @media(max-width: 992px) {
+                        gap: 16px;
+                    } 
+                    @media(max-width: 767px) {
+                        gap: 8px;
+                    } 
+                }
+                h5{
+                    @media(max-width: 1399px) {
+                        font-size: 20px;
+                    }
+                    @media(max-width: 1199px) {
+                        font-size: 18px;
+                    }
+                    @media(max-width: 992px) {
+                        font-size: 16px;
+                    } 
+                }
+            }
+        }
+    }
+    .result-blocks{
+        .result-block{
+            padding-top: 16px;
+            border: 1px solid $white;
+            .team{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 12px;
+            }
+            .result-report{
+                li{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 8px;
+                    &:last-child{
+                        margin-top: 8px;
+                        padding: 10px 8px;
+                        background: $black;
+                        border-bottom: 1px solid $light-black;
+                        border-top: 1px solid $light-black;
+                    }
+                }
+            }
+        }
+    }
+}

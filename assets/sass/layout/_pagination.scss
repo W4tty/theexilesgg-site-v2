@@ -1,0 +1,50 @@
+
+.pagination {
+    margin: 16px 0 0;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    gap: 8px;
+    li {
+        a{
+            width: 48px;
+            text-align: center;
+            font-family: $font-sec-2;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 150%; /* 24px */
+            padding: 8px 0;
+            border: none;
+            color: $white;
+            background: $black;
+            border-radius: 0px;
+            &.arrow{
+                font-size: 24px;
+                height: 40px;
+                border: none;
+                box-shadow: none;
+                padding: 4px 8px 0;
+                border-radius: 0px;
+                &:hover {
+                    background: $accent-1;
+                }
+            }
+            &.current {
+                background: $accent-1;
+                color: $white;
+            }
+            &:hover {
+                background: $accent-1;
+                color: $white;
+            }
+        }
+    }
+    .page-item{
+        &:last-child, &:first-child{
+            .page-link{
+                border-radius: 0px;
+            }
+        }
+    } 
+}
+

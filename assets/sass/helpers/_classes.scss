@@ -1,0 +1,102 @@
+// Colors
+.color-primary{
+    color:$accent-1 !important;
+}
+.bg-primary{
+    background-color:$accent-1 !important;
+}
+.color-white{
+    color:$white !important; 
+}
+.bg-white{
+    background-color: $white !important;
+}
+.light-black{
+    color:$light-black !important;
+}
+.bg-light-black{
+    background-color:$light-black !important;
+}
+.color-black{
+    color:$black !important;
+}
+.bg-black{
+    background-color: $black !important;
+}
+.dark-black{
+    color:$dark-black !important;
+}
+.bg-dark-black{
+    background-color:$dark-black !important;
+}
+.lightest-gray{
+    color:$lightest-gray !important;
+}
+.bg-lightest-gray{
+    background-color: $lightest-gray !important;
+}
+.light-gray{
+    color:$light-gray !important;
+}
+.bg-light-gray{
+    background-color: $light-gray !important;
+}
+.bg-medium-gray{
+    background-color: $medium-gray !important;
+}
+.medium-gray{
+    color:$medium-gray !important;
+}
+.dark-gray{
+    color:$dark-gray !important;
+}
+.bg-dark-gray{
+    background-color: $dark-gray !important;
+}
+.bg-red{
+    background-color: $red !important;
+}
+.bg-purple{
+    background-color: $purple !important;
+}
+
+
+// Radius 
+.br-30{
+    border-radius: 30px;
+}
+.br-25{
+    border-radius: 25px;
+}
+.br-20{
+    border-radius: 20px;
+}
+.br-15{
+    border-radius: 15px;
+}
+.br-10{
+    border-radius: 10px;
+}
+.br-5{
+    border-radius: 5px;
+}
+
+// Mix helper classes
+.b-unstyle{
+    border: 0;
+    background: transparent;
+}
+.shadow{
+    // box-shadow: $shadow !important;
+}
+
+.top-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    margin-bottom: 48px;
+}
+.search-bar{
+    width: 556px;
+}

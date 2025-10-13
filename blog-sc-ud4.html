@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="The Exiles - A Space Gaming Community">
+
+    <title>The Exiles - Star Citizen Update 4.0</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/media/logo.png">
+
+    <!-- All CSS files -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/vendor/aksVideoPlayer.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+
+<!-- Matomo -->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+      _paq.push(["setCookieDomain", "*.theexiles.gg"]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//analytics.theexiles.gg/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '2']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img referrerpolicy="no-referrer-when-downgrade" src="//analytics.theexiles.gg/matomo.php?idsite=2&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+
+</head>
+
+<body>
+    <!-- Preloader-->
+    <div id="preloader">
+        <div class="pyramid-loader">
+            <div class="wrapper">
+                <span class="side side1"></span>
+                <span class="side side2"></span>
+                <span class="side side3"></span>
+                <span class="side side4"></span>
+                <span class="shadow"></span>
+            </div>
+        </div>
+    </div>
+    <!-- Back To Top Start -->
+    <a href="#main-wrapper" id="backto-top" class="back-to-top"><i class="fas fa-angle-up"></i></a>
+    <!-- Main Wrapper Start -->
+    <div id="main-wrapper" class="main-wrapper overflow-hidden">
+
+        <!-- Header Area Start -->
+        <header class="large-screens">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <a class="navbar-brand" href="index.html">
+                            <img alt="logo" src="assets/media/logo.png">
+                        </a>
+                        <ul class="navbar-nav mainmenu">
+                            <li class="menu-item">
+                                <a href="index.html" class="main-menu-item">Home</a>
+                            </li>
+                            <li class="menu-item has-children">
+                                <a href="javascript:void(0);" class="main-menu-item">Games<i class="fas fa-caret-down m-1"></i></a>
+                                <ul class="submenu">
+                                    <li><a href="elite-dangerous.html">Elite Dangerous</a></li>
+                                    <li><a href="star-citizen.html">Star Citizen</a></li>
+                                    <li><a href="eve-online.html">EVE Online</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item has-children">
+                                <a href="https://guides.theexiles.gg" class="main-menu-item">Guides<i class="fas fa-caret-down m-1"></i></a>
+                                <ul class="submenu">
+                                  <li><a href="https://guides.theexiles.gg/" target="_blank" rel="noopener noreferrer">Elite Dangerous Guides</a></li>
+                                  <li><a href="https://guides.theexiles.gg/en/exploration target="_blank" rel="noopener noreferrer"">Exploration</a></li>
+                                  <li><a href="https://guides.theexiles.gg/en/trading" target="_blank" rel="noopener noreferrer">Trading</a></li>
+                                  <li><a href="https://guides.theexiles.gg/en/combat" target="_blank" rel="noopener noreferrer">Combat</a></li>
+                                  <li><a href="https://guides.theexiles.gg/en/bgs" target="_blank" rel="noopener noreferrer">BGS</a></li>
+                                  <li><a href="https://guides.theexiles.gg/en/mining" target="_blank" rel="noopener noreferrer">Mining</a></li>
+                                  <li><a href="https://guides.theexiles.gg/en/thargoids" target="_blank" rel="noopener noreferrer">Thargoids</a></li>
+                                  <li><a href="https://guides.theexiles.gg/en/gro" target="_blank" rel="noopener noreferrer">Galactic Rescue Ops</a></li>
+                                </ul>
+                              </li>
+                            <li class="menu-item has-children">
+                                <a href="javascript:void(0);" class="active main-menu-item">pages<i class="fas fa-caret-down m-1"></i></a>
+                                <ul class="submenu">
+                                    <li><a href="blogs.html">Blogs</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="right-content unstyled">
+                            <li class="search-form non-active">
+                                <form method="get" action="./blog.html">
+                                    <div class="search-input-group">
+                                        <button type="submit" class="input-group-text"><i
+                                                class="fal fa-search"></i></button>
+                                        <input type="text" class="form-control" placeholder="Search">
+                                    </div>
+                                </form>
+                            </li>
+                            <li class="icon"><a href="javascript:;" class="search-btn"><i class="fal fa-search"></i></a>
+                            </li>
+                            <li class="icon"><a href="login.html"><i class="fal fa-user"></i></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <header class="small-screen">
+            <div class="container">
+                <div class="mobile-menu">
+                    <div>
+                        <a class="navbar-brand" href="index.html"><img alt="" src="./assets/media/logo.png"></a>
+                    </div>
+                    <div class="hamburger-menu">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <nav class="mobile-navar d-xl-none">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="main-menu-item">Home</a>
+                        </li>
+                        <li class="has-children">GAMES <span class="icon-arrow"></span>
+                            <ul class="children">
+                                <li><a href="elite-dangerous.html">Elite Dangerous</a></li>
+                                <li><a href="star-citizen.html">Star Citizen</a></li>
+                                <li><a href="eve-online.html">EVE Online</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item has-children">
+                            <a href="https://guides.theexiles.gg" class="main-menu-item">Guides<i class="fas fa-caret-down m-1"></i></a>
+                            <ul class="submenu">
+                              <li><a href="https://guides.theexiles.gg/" target="_blank" rel="noopener noreferrer">Elite Dangerous Guides</a></li>
+                              <li><a href="https://guides.theexiles.gg/en/exploration" target="_blank" rel="noopener noreferrer">Exploration</a></li>
+                              <li><a href="https://guides.theexiles.gg/en/trading" target="_blank" rel="noopener noreferrer">Trading</a></li>
+                              <li><a href="https://guides.theexiles.gg/en/combat" target="_blank" rel="noopener noreferrer">Combat</a></li>
+                              <li><a href="https://guides.theexiles.gg/en/bgs" target="_blank" rel="noopener noreferrer">BGS</a></li>
+                              <li><a href="https://guides.theexiles.gg/en/mining" target="_blank" rel="noopener noreferrer">Mining</a></li>
+                              <li><a href="https://guides.theexiles.gg/en/thargoids" target="_blank" rel="noopener noreferrer">Thargoids</a></li>
+                              <li><a href="https://guides.theexiles.gg/en/gro" target="_blank" rel="noopener noreferrer">Galactic Rescue Ops</a></li>
+                            </ul>
+                          </li>
+                        <li class="has-children active">Pages <span class="icon-arrow"></span>
+                            <ul class="children">
+                                <li><a href="blogs.html">Blogs</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Header Area end -->
+
+        <!-- Page Start Banner Area Start -->
+        <div class="page-title-banner p-64">
+            <div class="container">
+                <div class="content">
+                    <a class="mb-16 cus-btn dark" href="index.html"><i class="fas fa-chevron-left"></i>Back to Home</a>
+                    <h1 class="mb-16">Star Citizen Alpha 4.0 Update</h1>
+                    <p>The highly anticipated <b>Star Citizen Alpha 4.0</b> is set to launch in 2025, bringing groundbreaking new features,
+                   including <b>Server Meshing, Pyro System, new exploration mechanics, and major AI improvements</b>.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Page Start Banner Area End -->
+
+        <!-- Main Content Start -->
+        <div class="page-content">
+
+            <!-- Blogs Area Start -->
+            <section class="p-40">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="detail-blog">
+                                <h3 class="mb-32">Star Citizen Alpha 4.0</h3>
+                                <h4 class="mb-16">A New Era Begins</h4>
+                                <ul class="unstyled info mb-32">
+                                    <li>
+                                        <h5>Author:</h5>
+                                        <h5 class="color-primary"> Watty</h5>
+                                    </li>
+                                    <li>
+                                        <h5>Category:</h5>
+                                        <h5 class="medium-gray"> Star Citizen</h5>
+                                    </li>
+                                    <li>
+                                        <h5>Date:</h5>
+                                        <h5 class="medium-gray"> Jan 30,2025</h5>
+                                    </li>
+                                </ul>
+                                <img src="assets/media/blogs/sc-blog-ud4-main.jpg" alt="" class="mb-32">
+                                <h4 class="mb-16">New Features in Star Citizen Alpha 4.0</h4>
+                            <ul class="styled-list mb-32">
+                                <li><span style="color: #b01515;">Server Meshing</span><br>The long-awaited tech that will allow a seamless experience across multiple servers.</li>
+                                <li><span style="color: #b01515;">Pyro System</span><br>A dangerous new star system filled with lawless zones, wreckage fields, and new points of interest.</li>
+                                <li><span style="color: #b01515;">Persistent Universe Enhancements</span><br>More detailed planetary tech and improvements to base-building mechanics.</li>
+                                <li><span style="color: #b01515;">New AI Behavior</span><br>Smarter NPCs, better combat AI, and improved pathfinding for AI-controlled ships.</li>
+                                <li><span style="color: #b01515;">Exploration Updates</span><br>New tools for deep-space scanning and planetary surveys.</li>
+                                <li><span style="color: #b01515;">New Ships and Vehicles</span><br>A fresh lineup of ships specialized for deep-space exploration and piracy.</li>
+                            </ul>
+
+                            <div class="quote mb-32">
+                                <h4 class="mb-24">"Star Citizen Alpha 4.0 will redefine the way players interact with the persistent universe, opening doors to
+                                    a new level of immersion and multiplayer experience."</h4>
+                                <h5 class="color-sec">@CloudImperiumGames</h5>
+                            </div>
+
+                            <p class="mb-16">With server meshing finally making its way into the game, players will experience larger-scale battles,
+                               persistent locations, and more opportunities for cooperative and competitive gameplay. The introduction of the
+                               Pyro System will introduce new hazards, including extreme weather conditions, pirate factions, and abandoned
+                               space stations hiding valuable loot.</p>
+                            <h4 class="mb-32">Prepare for the Next Chapter</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="assets/media/blogs/sc-blog-2.webp" alt="Pyro System" class="mb-32">
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="assets/media/blogs/sc-blog-1.webp" alt="Server Meshing" class="mb-32">
+                                </div>
+                            </div>
+                        </div>
+                            <div class="leave-comment-sec m-40">
+                                <h3 class="mb-16">Leave a Comment</h3>
+                                <h6 class="mb-32">Your email will be kept private. Required fields are marked *</h6>
+                                <form action="blog-detail.html" class="form-validator">
+                                    <div class="mb-30">
+                                        <textarea class="form-control" name="reply" id="reply" rows="4" placeholder="Write your comments here"></textarea>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="mb-30">
+                                                <input type="text" class="form-control" id="name" name="name" required placeholder="Your Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-30">
+                                                <input type="email" class="form-control" id="comment-email" name="comment-email" required placeholder="Your Email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-32">
+                                        <input type="text" class="form-control" id="web" name="web" required placeholder="Website">
+                                    </div>
+                                    <button type="submit" class="b-unstyle cus-btn sec">Send Comment</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="sidebar">
+                                <div class="sidebar-block mb-32">
+                                    <h3 class="color-primary mb-32">Search</h3>
+                                    <div class="search-bar w-100">
+                                        <form method="get" action="blogs.html">
+                                            <div class="form-group has-search">
+                                                <input type="text" class="form-control" placeholder="Search">
+                                                <button type="submit" class="b-unstyle"><i class="fal fa-search"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="sidebar-block mb-32">
+                                    <h3 class="color-primary mb-32">Categories</h3>
+                                    <ul class="unstyled category-list">
+                                        <li class="mb-16">
+                                            <h5 class="light-gray"><a href="blogs.html"> The Exiles</a></h5>
+                                            <h5  class="light-gray">(1)</h5>
+                                        </li>
+                                        <li class="mb-16">
+                                            <h5 class="light-gray"><a href="blogs.html"> Elite Dangerous</a></h5>
+                                            <h5  class="light-gray">(1)</h5>
+                                        </li>
+                                        <li class="mb-16">
+                                            <h5 class="light-gray"><a href="blogs.html"> Star Citizen</a></h5>
+                                            <h5  class="light-gray">(1)</h5>
+                                        </li>
+                                        <li class="mb-16">
+                                            <h5 class="light-gray"><a href="blogs.html"> EVE Online</a></h5>
+                                            <h5  class="light-gray">(0)</h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sidebar-block mb-32">
+                                    <h3 class="color-primary mb-32">Resent Articles</h3>
+                                    <ul class="recent-blogs unstyled">
+                                        <li class="blog-item mb-32">
+                                            <div class="img-block">
+                                                <div class="overlay"></div>
+                                                <img src="assets/media/blogs/bs-1.png" alt="">
+                                            </div>
+                                            <div class="text-block">
+                                                <h6 class="light-gray mb-16">Jan 30, 2025</h6>
+                                                <h5><a href="blog-trailblazers.html">Elite Dangerous: Trailblazers Update...</a></h5>
+                                            </div>
+                                        </li>
+                                        <li class="blog-item mb-32">
+                                            <div class="img-block">
+                                                <div class="overlay"></div>
+                                                <img src="assets/media/blogs/bs-sc-ud4.png" alt="">
+                                            </div>
+                                            <div class="text-block">
+                                                <h6 class="light-gray mb-16">Jan 30, 2025</h6>
+                                                <h5><a href="blog-sc-ud4.html">Star Citizen: Alpha 4.0 Update</a></h5>
+                                            </div>
+                                        </li>
+                                        <li class="blog-item">
+                                            <div class="img-block">
+                                                <div class="overlay"></div>
+                                                <img src="assets/media/blogs/bs-exile01.png" alt="">
+                                            </div>
+                                            <div class="text-block">
+                                                <h6 class="light-gray mb-16">Feb 19, 2025</h6>
+                                                <h5><a href="blog-exiles01.html">Why The Exiles Is The Best Elite Squad </a></h5>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sidebar-block mb-32">
+                                    <h3 class="color-primary  mb-32">Tags</h3>
+                                    <ul class="unstyled blog-tags">
+                                        <li>#GamingCommunity</li>
+                                        <li>#EliteDangerous</li>
+                                        <li>#Squadron</li>
+                                        <li>#Teamwork</li>
+                                        <li>#Exploration</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <!-- Blogs Area End -->
+
+            <!-- Blogs Area Start -->
+            <section class="p-40">
+                <div class="container">
+                <div class="heading">
+                    <h2>Latest News</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                    <a href="blog-trailblazers.html" class="blog-card mb-30 mb-lg-0">
+                        <div class="category-block">
+                        <img src="assets/media/shapes/blog-vector.png" alt="">
+                        <h5 class="c-title">Elite Dangerous</h5>
+                        </div>
+                        <div class="img-block">
+                        <img src="assets/media/blogs/b-1.png" alt="">
+                        <div class="overlay"></div>
+                        <div class="text-block">
+                            <h6 class="light-gray mb-16">Jan 30, 2025</h6>
+                            <h5 class="title">Elite Dangerous: Trailblazers Update</h5>
+                        </div>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                    <a href="blog-sc-ud4.html" class="blog-card mb-30 mb-lg-0">
+                        <div class="category-block">
+                        <img src="assets/media/shapes/blog-vector.png" alt="">
+                        <h5 class="c-title">Star Citizen</h5>
+                        </div>
+                        <div class="img-block">
+                        <img src="assets/media/blogs/blog-sc-up40.png" alt="">
+                        <div class="overlay"></div>
+                        <div class="text-block">
+                            <h6 class="light-gray mb-16">Jan 30, 2025</h6>
+                            <h5 class="title">Star Citizen: Alpha 4.0 Update</h5>
+                        </div>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                    <a href="blog-exiles01.html" class="blog-card">
+                        <div class="category-block">
+                        <img src="assets/media/shapes/blog-vector.png" alt="">
+                        <h5 class="c-title">The Exiles</h5>
+                        </div>
+                        <div class="img-block">
+                        <img src="assets/media/blogs/blog-exiles01.png" alt="">
+                        <div class="overlay"></div>
+                        <div class="text-block">
+                            <h6 class="light-gray mb-16">Feb 5, 2025</h6>
+                            <h5 class="title">Why The Exiles Is The Best Elite Squad</h5>
+                        </div>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <!-- Blogs Area End -->
+
+        </div>
+
+        <!-- Main Content End -->
+
+        <!-- Footer Area Start  -->
+        <footer>
+            <div class="image-slider pt-40">
+                <div class="img-block">
+                    <img src="assets/media/images/bs-1.png" alt="">
+                </div>
+                <div class="img-block">
+                    <img src="assets/media/images/bs-2.png" alt="">
+                </div>
+                <div class="img-block">
+                    <img src="assets/media/images/bs-3.png" alt="">
+                </div>
+                <div class="img-block">
+                    <img src="assets/media/images/bs-4.png" alt="">
+                </div>
+                <div class="img-block">
+                    <img src="assets/media/images/bs-5.png" alt="">
+                </div>
+                <div class="img-block">
+                    <img src="assets/media/images/bs-6.png" alt="">
+                </div>
+                <div class="img-block">
+                    <img src="assets/media/images/bs-7.png" alt="">
+                </div>
+                <div class="img-block">
+                    <img src="assets/media/images/bs-8.png" alt="">
+                </div>
+                <div class="img-block">
+                    <img src="assets/media/images/bs-9.png" alt="">
+                </div>
+                <div class="img-block">
+                    <img src="assets/media/images/bs-10.png" alt="">
+                </div>
+                <div class="img-block">
+                    <img src="assets/media/images/bs-11.png" alt="">
+                </div>
+            </div>
+            <div class="container">
+                <div class="footer-main p-40">
+                    <div class="row">
+                        <div class="col-xl-3 col-md-7">
+                            <div class="widget  mb-64 mb-xl-0 ">
+                                <a href="index.html" class="mb-16"><img src="assets/media/logo.png" alt=""></a>
+                                <h6 class="light-gray mb-32 brand-text">Explore the stars.<br>Conquer the unknown.<br>Forge your legacy</h6>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 offset-xl-1 col-sm-6">
+                            <div class="widget  mb-64 mb-xl-0">
+                                <h4 class="mb-24">Quick Links</h4>
+                                <ul class="list unstyled">
+                                    <li class="mb-8">
+                                        <h6><a href="index.html">Home</a></h6>
+                                    </li>
+                                    <li class="mb-8">
+                                        <h6><a href="about.html">About Us</a></h6>
+                                    </li>
+                                    <li class="mb-8">
+                                        <h6><a href="https://discord.gg/pW2AMFEHUc">Join Us</a></h6>
+                                    </li>
+                                    <li>
+                                        <h6><a href="contact.html">Contact</a></h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 offset-xl-1 col-sm-6">
+                            <div class="widget  mb-64 mb-xl-0">
+                                <h4 class="mb-24">Games<br>We Play</h4>
+                                <ul class="list unstyled">
+                                    <li class="mb-8">
+                                        <h6><a href="elite-dangerous.html">Elite Dangerous</a></h6>
+                                    </li>
+                                    <li class="mb-8">
+                                        <h6><a href="star-citizen.html">Star Citizen</a></h6>
+                                    </li>
+                                    <li class="mb-8">
+                                        <h6><a href="eve-online.html">EVE Online</a></h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="widget">
+                                <h4 class="mb-24">Contact</h4>
+                                <ul class="contact-list unstyled mb-16">
+                                    <li>
+                                        <a href="mailto:support@theexiles.gg">
+                                            <i class="fal fa-envelope"></i>
+                                            <span>support@theexiles.gg</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="unstyled social-icons mb-48">
+                                    <li><a href=""><img src="assets/media/icons/Facebook.png" alt=""></a></li>
+                                    <li><a href=""><img src="assets/media/icons/Twitter.png" alt=""></a></li>
+                                    <li><a href=""><img src="assets/media/icons/Instagram.png" alt=""></a></li>
+                                    <li><a href=""><img src="assets/media/icons/SnapChat.png" alt=""></a></li>
+                                </ul>
+                                <p class="light-gray">©2025 <a href="index.html">The Exiles</a>. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Area End  -->
+    </div>
+
+
+    <!-- Jquery Js -->
+    <script src="assets/js/vendor/jquery-3.6.3.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/jquery-appear.js"></script>
+    <script src="assets/js/vendor/jquery-validator.js"></script>
+    <script src="assets/js/vendor/aksVideoPlayer.js"></script>
+
+    <!-- Site Scripts -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

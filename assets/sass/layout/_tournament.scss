@@ -1,0 +1,302 @@
+//  tournaments list  
+.tournaments{
+    .tab-list{
+        .nav-tabs{
+            margin: 0 auto;
+        }
+    }
+    .nav-tabs{
+        border: none;
+        clip-path: polygon(5% 0, 100% 0, 100% 62%, 95% 100%, 0 100%, 0 38%);
+        width: fit-content;
+        margin-left: auto;
+        @include media-query(992px) {
+            margin: 0 auto;
+            margin-top: 32px;
+        }
+        .nav-item{
+            .nav-link{
+                border: none;
+                border-radius: 0;
+                background-color: $light-black;
+                color: $white;
+                transition: $transition;
+                font-family: $font-sec-2;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 150%;
+                letter-spacing: 0.32px;
+                padding: 12px 16px;
+                @include media-query(992px) {
+                    font-size: 15px;
+                } 
+                @include media-query(767px) {
+                    font-size: 14px;
+                } 
+                @include media-query(575px) {
+                    font-size: 13px;
+                } 
+                @include media-query(492px) {
+                    font-size: 12px;
+                    padding: 8px;
+                } 
+                &.active{
+                    background-color: $accent-1;
+                }
+                &:hover{
+                    background-color: $accent-1;
+                }
+            }
+        }
+    }
+    .tournament-card{
+        display: flex;
+        align-items: flex-start;
+        gap: 32px;
+        padding: 52px 32px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 90% 100%, 10% 100%, 0 75%);
+        @include short-query(1199px , 1399px) {
+            padding: 52px 16px;
+            gap: 24px;
+        }
+        @include media-query(767px) {
+            padding: 52px 16px;
+            gap: 24px;
+            clip-path: polygon(0 0, 100% 0, 100% 75%, 90% 100%, 10% 100%, 0 75%);
+        }
+        @include media-query(575px) {
+            padding: 32px 12px;
+            gap: 16px;
+        }
+        .t-logo{
+            @include media-query(575px) {
+                width: 64px;
+            }
+        }
+        .text-block{
+            .info{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 32px;
+                @include short-query(1199px , 1399px) {
+                    gap: 16px;
+                }
+                @include media-query(575px) {
+                    gap: 16px;
+                    
+                }
+                .block{
+                    display: flex;
+                    gap: 8px;
+                    align-items: center;
+                    img{
+                        @include media-query(575px) {
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .btn-block{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            @include media-query(767px) {
+                gap: 16px;
+            }
+        }
+        &.b-1{
+            background: url(../media/backgrounds/t-1.png) center no-repeat;
+            background-size: cover;
+        }
+        &.b-2{
+            background: url(../media/backgrounds/t-2.png) center no-repeat;
+            background-size: cover;
+        }
+        &.b-3{
+            background: url(../media/backgrounds/t-3.png) center no-repeat;
+            background-size: cover;
+        }
+        &.b-4{
+            background: url(../media/backgrounds/t-4.png) center no-repeat;
+            background-size: cover;
+        }
+    }
+    .load-more-btn{
+        margin: 0 auto;
+        margin-top: 16px;
+    }
+}
+
+//  tournament live streaming 
+.tournaments-live{
+    .live-stream-card{
+        background: url(../media/backgrounds/tc-bg.png) no-repeat center;
+        background-size: cover;
+        @include media-query(992px) {
+           padding: 32px 0;
+        }
+        .logos-block{
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+            align-items: center;
+            @include media-query(575px) {
+                justify-content: center;
+                gap: 32px;
+            }
+            
+        }
+        .detail-block{
+            display: grid;
+            height: 100%;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+            @include media-query(991px) {
+                display: block;
+                margin-bottom: 32px;
+            }
+        }
+        .link-block{
+            justify-content: center;
+            display: grid;
+            height: 100%;
+            align-content: center;
+            @include media-query(991px) {
+                bottom: 12px;
+                bottom: 12px;
+            }
+            ul {
+                display: flex;
+                gap: 32px;
+                @include media-query(992px) {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+// Tournament Details
+.tournament-detail{
+    .nav-tabs{
+        display: flex;
+        gap: 32px;
+        border: none;
+        width: fit-content;
+        @include media-query(992px) {
+            margin: 0 auto;
+        }
+        .nav-item{
+            .nav-link{
+                border: 1px solid $white;
+                border-radius: 0;
+                background-color: transparent;
+                color: $white;
+                transition: $transition;
+                font-family: $font-sec-2;
+                font-weight: 600;
+                font-size: 21px;
+                line-height: 130%;
+                padding: 8px 24px;
+                @include media-query(992px) {
+                    font-size: 19px;
+                } 
+                @include media-query(492px) {
+                    font-size: 16px;
+                    padding: 8px 12px;
+                } 
+                &.active{
+                    background-color: $accent-1;
+                    border: 1px solid $accent-1;
+                }
+                &:hover{
+                    background-color: $accent-1;
+                    border: 1px solid $accent-1;
+                }
+            }
+        }
+    }
+    .prizes{
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid $medium-gray;
+            padding: 16px 0;
+            &:nth-child(odd){
+                background: $black;
+            }
+            &:last-child{
+                border-bottom: 0;
+            }
+            h5{
+                width: 153px;
+                text-align: center;
+                &:nth-child(2){
+                    width: 185px;
+                }
+
+            }
+            h4{
+                width: 153px;
+                text-align: center;
+                &:nth-child(2){
+                    width: 185px;
+                }
+
+            }
+        }
+    }
+    .schedule{
+        width: 100%;
+        text-align: center;
+        .title{
+            padding: 16px;
+            color: $accent-1;
+            background: $black;
+            border-bottom: 1px solid $medium-gray;
+        }
+        .date{
+            padding: 16px;
+            border-bottom: 1px solid $medium-gray;
+        }
+    }
+    .points{
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid $medium-gray;
+            padding: 16px 0;
+            &:nth-child(odd){
+                background: $black;
+            }
+            &:last-child{
+                border-bottom: 0;
+            }
+            h5{
+                width: 153px;
+                text-align: center;
+                &:nth-child(2){
+                    width: 185px;
+                }
+
+            }
+            h4{
+                width: 153px;
+                text-align: center;
+                &:nth-child(2){
+                    width: 185px;
+                }
+
+            }
+        }
+    }
+}
+

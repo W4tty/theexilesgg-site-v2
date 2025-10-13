@@ -1,0 +1,21 @@
+.detail-blog{
+    .info{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        flex-wrap: wrap;
+        li{
+            display: flex;
+            gap: 4px;
+            align-items: center;
+        }
+    }
+    p{
+        color: $medium-gray;
+    }
+    .quote{
+        background-color: $black;
+        padding: 32px;
+        border-left: 2px solid $accent-1;
+    }
+}

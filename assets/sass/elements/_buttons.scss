@@ -1,0 +1,164 @@
+.back-to-top {
+    position: fixed;
+    bottom: 0px;
+    right: 12px;
+    display: block;
+    width: 120px;
+    height: 120px;
+    font-size: 100px;
+    padding: 11px 0;
+    background: $accent-1;
+    color: $white;
+    text-align: center;
+    opacity: 0;
+    text-decoration: none;
+    -webkit-clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 15px 100%, 0 100%);
+    clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 15px 100%, 0 100%);
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    transform: scale(0.3);
+    z-index: 999;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+
+    &:hover {
+        background: $accent-1;
+        color: $white;
+    }
+
+    &.show {
+        opacity: 1;
+    }
+
+    @include media-query(490px) {
+        right: -20px;
+        bottom: -20px;
+    }
+}
+
+.cus-btn {
+    -webkit-clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
+    clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
+    font-family: $font-sec-2;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.32px;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    align-items: center;
+    gap: 8px;
+    transition: $transition;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    @include media-query(492px) {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    &.primary {
+        background-color: $accent-1;
+        &::before {
+            content: '';
+            width: 0;
+            height: 300%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(320deg);
+            background: $white;
+            transition: .5s ease;
+            display: block;
+            z-index: -1;
+        }
+        
+        &:hover {
+            background-color: $accent-1;
+            color: $accent-1;
+            transition: $transition;
+            &::before {
+                width: 105%;
+            }
+        }
+    }
+
+    &.sec {
+        background-color: $white;
+        color: $accent-1;
+
+        &::before {
+            content: '';
+            width: 0;
+            height: 300%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(320deg);
+            background: $accent-1;
+            transition: .5s ease;
+            display: block;
+            z-index: -1;
+        }
+
+        &:hover {
+            background-color: $accent-1;
+            color: $white;
+            transition: $transition;
+            &::before {
+                width: 105%;
+            }
+        }
+    }
+
+    &.dark {
+        background-color: $black;
+        color: $white;
+        transition: $transition;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+.cus-btn-2 {
+    -webkit-clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
+    clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
+    font-family: $font-sec-2;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.32px;
+    padding: 12px 20px;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 4px;
+    transition: $transition;
+
+    &.primary {
+        background-color: $accent-1;
+        color: $white;
+
+        &:hover {
+            background-color: $white;
+            color: $accent-1;
+            transition: $transition;
+        }
+    }
+
+    &.sec {
+        background-color: $accent-1;
+        color: $white;
+
+        &:hover {
+            background-color: $white;
+            color: $accent-1;
+            transition: $transition;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+.about{
+    .featured-image{
+        @include media-query(992px) {
+            width: 30%;
+        } 
+    }
+}
