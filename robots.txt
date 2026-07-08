@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /html/
 Disallow: /error/
 
 Sitemap: https://www.theexiles.gg/sitemap.xml
