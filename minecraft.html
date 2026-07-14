@@ -18,7 +18,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Modded Minecraft Server | ExilesMC Aero | The Exiles">
     <meta property="og:description" content="ExilesMC Aero is live: 500+ mods, Create Aeronautics airships, rockets to real planets, and a Star Wars layer.">
-    <meta property="og:image" content="https://www.theexiles.gg/assets/media/images/mc-hero.jpg">
+    <meta property="og:image" content="https://www.theexiles.gg/assets/media/images/mc-hero-airship.jpg">
     <meta property="og:url" content="https://www.theexiles.gg/minecraft.html">
     <meta property="og:site_name" content="The Exiles">
     <meta property="og:locale" content="en_US">
@@ -27,7 +27,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Modded Minecraft Server | ExilesMC Aero | The Exiles">
     <meta name="twitter:description" content="ExilesMC Aero is live: 500+ mods, Create Aeronautics airships, rockets to real planets, and a Star Wars layer.">
-    <meta name="twitter:image" content="https://www.theexiles.gg/assets/media/images/mc-hero.jpg">
+    <meta name="twitter:image" content="https://www.theexiles.gg/assets/media/images/mc-hero-airship.jpg">
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/media/logo.png">
@@ -102,6 +102,15 @@
     ]
   }
   </script>
+
+  <!-- ExilesMC Aero: pack card grid + hero legibility (images-only refresh 2026-07-14) -->
+  <style>
+    .pack-card{height:100%;background:#0d0d0d;border:1px solid #2a0808;border-radius:8px;overflow:hidden;display:flex;flex-direction:column;}
+    .pack-card img{display:block;width:100%;aspect-ratio:16 / 9;height:auto;object-fit:cover;border-bottom:1px solid #b01515;}
+    .pack-card-body{padding:20px 22px 24px;}
+    .pack-card-body h5{margin-bottom:12px;}
+    .pack-card-body p{margin:0;}
+  </style>
 </head>
 
 <body>
@@ -229,7 +238,7 @@
     <!-- Header Area End -->
 
     <!-- Page Start Banner Area Start -->
-    <div class="page-title-banner p-64" style="background: linear-gradient(78deg, rgba(0,0,0,0.85) 0%, rgba(23,23,23,0.45) 54%, rgba(13,13,13,0.8) 100%), url('assets/media/images/mc-hero.jpg') center 65%/cover no-repeat;">
+    <div class="page-title-banner p-64" style="background: linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.6) 33%, rgba(0,0,0,0.12) 62%, rgba(0,0,0,0) 100%), linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/media/images/mc-hero-airship.jpg') center center/cover no-repeat;">
       <div class="container">
         <div class="content">
           <a class="mb-16 cus-btn dark" href="index.html"><i class="fas fa-chevron-left"></i> Back to Home</a>
@@ -268,7 +277,7 @@
             </div>
           </div>
           <div class="col-lg-6 text-center">
-            <img src="assets/media/images/mc-factory.jpg" alt="Greetings from Exiles: a factory hall on our community Minecraft server" class="featured-image" style="border: 1px solid #2a0808; border-radius: 8px;">
+            <img src="assets/media/images/mc-airship-deck.jpg" alt="The view from the deck of a flying airship, Distant Horizons terrain stretching to the horizon" class="featured-image" loading="lazy" style="border: 1px solid #2a0808; border-radius: 8px;">
           </div>
         </div>
       </div>
@@ -280,19 +289,65 @@
       <div class="container">
         <h2 class="text-center mb-40">What's In The Pack:</h2>
         <div class="row">
-          <div class="col-md-6">
-            <ul class="medium-gray">
-              <li><span style="color: #b01515;">Land, Sky &amp; Space:</span> A custom quest campaign carries you from pedal-powered contraptions to jetpacks, airships, and finally rockets to real solar-system planets.</li>
-              <li><span style="color: #b01515;">Star Wars:</span> Visit Star Wars planets, fly ships with working hyperdrives, and settle arguments with lightsabers and blasters.</li>
-              <li><span style="color: #b01515;">Real Airships:</span> Create Aeronautics and its addon ecosystem make your Create contraptions physically fly. Design it, build it, sail it.</li>
-            </ul>
+          <!-- Card 1 -->
+          <div class="col-lg-4 col-md-6 mb-32">
+            <div class="pack-card">
+              <img src="assets/media/images/mc-card-questbook.jpg" alt="The ExilesMC Aero quest book open to its land-to-sky-to-space campaign" loading="lazy">
+              <div class="pack-card-body">
+                <h5 class="mb-16"><span style="color: #b01515;">Land, Sky &amp; Space</span></h5>
+                <p class="medium-gray">A custom quest campaign carries you from pedal-powered contraptions to jetpacks, airships, and finally rockets to real solar-system planets.</p>
+              </div>
+            </div>
           </div>
-          <div class="col-md-6">
-            <ul class="medium-gray">
-              <li><span style="color: #b01515;">Deep Tech &amp; Magic:</span> Mekanism, Applied Energistics 2 and Powah for the engineers; Ars Nouveau and Apotheosis for everyone else.</li>
-              <li><span style="color: #b01515;">A Better World:</span> Biomes O' Plenty, Serene Seasons and Distant Horizons make the view from your airship worth the climb.</li>
-              <li><span style="color: #b01515;">Built In-House:</span> Pack, quests and even custom mods are developed by our own team. Member feedback shapes every update.</li>
-            </ul>
+          <!-- Card 2 -->
+          <div class="col-lg-4 col-md-6 mb-32">
+            <div class="pack-card">
+              <img src="assets/media/images/mc-card-starwars.jpg" alt="A blocky sci-fi starship with glowing engines on an alien world in ExilesMC Aero" loading="lazy">
+              <div class="pack-card-body">
+                <h5 class="mb-16"><span style="color: #b01515;">Star Wars</span></h5>
+                <p class="medium-gray">Visit Star Wars planets, fly ships with working hyperdrives, and settle arguments with lightsabers and blasters.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-lg-4 col-md-6 mb-32">
+            <div class="pack-card">
+              <img src="assets/media/images/mc-card-airship.jpg" alt="A player-built Create Aeronautics airship under construction on scaffolding" loading="lazy">
+              <div class="pack-card-body">
+                <h5 class="mb-16"><span style="color: #b01515;">Real Airships</span></h5>
+                <p class="medium-gray">Create Aeronautics and its addon ecosystem make your Create contraptions physically fly. Design it, build it, sail it.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-lg-4 col-md-6 mb-32">
+            <div class="pack-card">
+              <img src="assets/media/images/mc-card-createfactory.jpg" alt="A working Create factory of gears and belts mid-production" loading="lazy">
+              <div class="pack-card-body">
+                <h5 class="mb-16"><span style="color: #b01515;">Deep Tech &amp; Magic</span></h5>
+                <p class="medium-gray">Mekanism, Applied Energistics 2 and Powah for the engineers; Ars Nouveau and Apotheosis for everyone else.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="col-lg-4 col-md-6 mb-32">
+            <div class="pack-card">
+              <img src="assets/media/images/mc-card-vista.jpg" alt="A Biomes O' Plenty landscape rendered with Distant Horizons draw distance" loading="lazy">
+              <div class="pack-card-body">
+                <h5 class="mb-16"><span style="color: #b01515;">A Better World</span></h5>
+                <p class="medium-gray">Biomes O' Plenty, Serene Seasons and Distant Horizons make the view from your airship worth the climb.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="col-lg-4 col-md-6 mb-32">
+            <div class="pack-card">
+              <img src="assets/media/images/mc-card-inhouse.jpg" alt="A custom in-house magic workbench block in use on ExilesMC Aero" loading="lazy">
+              <div class="pack-card-body">
+                <h5 class="mb-16"><span style="color: #b01515;">Built In-House</span></h5>
+                <p class="medium-gray">Pack, quests and even custom mods are developed by our own team. Member feedback shapes every update.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
