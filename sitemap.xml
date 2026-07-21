@@ -2,12 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.theexiles.gg/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.theexiles.gg/blogs.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
@@ -148,6 +148,21 @@
   <url>
     <loc>https://www.theexiles.gg/blog-angels-fall-first-1-0.html</loc>
     <lastmod>2026-07-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.theexiles.gg/blog-ed-colonia-anniversary.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.theexiles.gg/blog-sc-greys-market-basher.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.theexiles.gg/blog-eve-24-01-visions-of-greatness.html</loc>
+    <lastmod>2026-07-21</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>
